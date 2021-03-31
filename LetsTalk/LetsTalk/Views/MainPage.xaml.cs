@@ -14,7 +14,12 @@ namespace LetsTalk
             InitializeComponent();
         }
 
-        private void SignUpButton(object sender, EventArgs e)
+        private void InButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegButton_Clicked(object sender, EventArgs e)
         {
 
         }
