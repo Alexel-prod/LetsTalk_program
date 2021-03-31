@@ -13,5 +13,10 @@ namespace LetsTalk
         {
             InitializeComponent();
         }
+
+        private void SignUpButton(object sender, EventArgs e)
+        {
+
+        }
     }
 }

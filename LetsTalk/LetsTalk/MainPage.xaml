@@ -6,6 +6,6 @@
     <StackLayout Padding="5,5,5,5">
         <Label Text="Let's Taklk" TextColor="#000" FontSize="48" HorizontalOptions="Center" Margin="30" ></Label>
         <Entry TextColor="#000" Placeholder="Введите Имя"></Entry>
-        <Button Text="Продолжить" WidthRequest="300" HorizontalOptions="Center"></Button>
+        <Button Clicked="SignUpButtonClik" FontAttributes="Bold" x:Name="SignUpButton" Text="Продолжить" WidthRequest="300" HorizontalOptions="Center"></Button>
     </StackLayout>
 </ContentPage>
