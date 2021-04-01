@@ -28,9 +28,10 @@ namespace LetsTalk.Views
 			string UserPass = PassField.Text;
 			/* string UserTopics = NameField.Text;*/
 			string UserScore = "1";
+           
 
 			DB db = new DB();
-			MySqlCommand command = new MySqlCommand("INSERT INTO `users` (`name`, `topics`, `login`, `score`, `phone`, `mail`, `pass`) VALUES ('@UN', '@UT', '@UL', '@US', '@UP', '@UM', '@UPASS');", db.Connection());
+			MySqlCommand command = new MySqlCommand("INSERT INTO `users` (`name`, `topics`, `login`, `score`, `phone`, `mail`, `pass`) VALUES (@UN, '@UT', @UL, @US, @UP, @UM, @UPASS);", db.Connection());
 
 			command.Parameters.Add("@UN", MySqlDbType.VarChar).Value = UserName;
 			//command.Parameters.Add("@UT", MySqlDbType.VarChar).Value = UserTopics;

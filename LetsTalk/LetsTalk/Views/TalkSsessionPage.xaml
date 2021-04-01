@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LetsTalk.Views.TalkSessionPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#17014F">
+            <!--<Button x:Name="ToTalkButton" Clicked="ToTalkButton_Clicked" BorderColor="#48DB4B" TextColor="#48DB4B" FontAttributes="Bold" Text="Найти собеседника" WidthRequest="300" HorizontalOptions="Center"></Button>-->
+            <Button x:Name="ToNextButton" Clicked="ToNextButton_Clicked" BorderColor="#48DB4B" TextColor="#48DB4B" FontAttributes="Bold" Text="Найти собеседника" WidthRequest="300" HorizontalOptions="Center"></Button>
+            <Button x:Name="ToPetButton" BorderColor="#3DBDD9" TextColor="#3DBDD9" Clicked="ToPetButton_Clicked" FontAttributes="Bold" Text="Питомец" WidthRequest="300" HorizontalOptions="Center"></Button>
+            <Button x:Name="ToSettingsButton" BorderColor="#3DBDD9" TextColor="#3DBDD9" Clicked="ToSettingsButton_Clicked" FontAttributes="Bold" Text="Настройки" WidthRequest="300" HorizontalOptions="Center"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

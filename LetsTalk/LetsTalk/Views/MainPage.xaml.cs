@@ -29,19 +29,23 @@ namespace LetsTalk
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE 'login' = @UL AND 'pass' =  @UPASS", db.Connection());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login` = @UL AND `pass` = @UPASS ", db.Connection());
             
             //SqlConnection.CreateCommand()
             command.Parameters.Add("@UL", MySqlDbType.VarChar).Value = UserLogin;
             command.Parameters.Add("@UPASS", MySqlDbType.VarChar).Value = UserPass;
+            
+             adapter.SelectCommand = command;
 
-            adapter.SelectCommand = command;
             adapter.Fill(table);
+     
 
-            if (table.Rows.Count > 0)
-                RegButton.Text = Convert.ToString("12345");
-            else
-                RegButton.Text = Convert.ToString("54321");
+             if (table.Rows.Count > 0)
+            {
+                await Navigation.PushAsync(new HomePage());
+            }
+             else
+                 RegButton.Text = Convert.ToString("Такого пользователя не существует(((");
         }
 
         private async void RegButton_Clicked(object sender, EventArgs e)
