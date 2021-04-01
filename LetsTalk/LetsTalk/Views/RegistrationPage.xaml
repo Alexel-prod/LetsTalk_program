@@ -1,23 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LetsTalk.Views.RegistrationPage">
+             x:Class="LetsTalk.Views.RegistrationPage" 
+             Title="Регистрация">
+    
     <StackLayout Padding="5,5,5,5">
         <Label Text="Let's Taklk" TextColor="#000" FontSize="48" HorizontalOptions="Center" Margin="30" ></Label>
-        <Entry TextColor="#000" Placeholder="Введите Имя"></Entry>
-        <Entry TextColor="#000" Placeholder="Введите Номер телефона"></Entry>
-        <Entry TextColor="#000" Placeholder="Введите Почту"></Entry>
-        <Entry TextColor="#000" Placeholder="Введите Пароль"></Entry>
-        <Entry TextColor="#000" Placeholder="Введите Логин"></Entry>
-        
-        <StackPanel x:Name="stackPanel">
-            <CheckBox x:Name="checkBox1" IsThreeState="True" IsChecked="False" Height="20" Content="Неотмечено" />
-            <CheckBox x:Name="checkBox1" IsThreeState="True" IsChecked="False" Height="20" Content="Неотмечено" />
-            <CheckBox x:Name="checkBox1" IsThreeState="True" IsChecked="False" Height="20" Content="Неотмечено" />
-            
-        </StackPanel>
-        <!--<Button Clicked="SignUpButtonClik" FontAttributes="Bold" x:Name="SignUpButton" Text="Продолжить" WidthRequest="300" HorizontalOptions="Center"></Button>-->
-        <Button x:Name="InButton" Clicked="InButton_Clicked" FontAttributes="Bold" Text="Продолжить" WidthRequest="300" HorizontalOptions="Center"></Button>
-        <Button x:Name="RegButton" Clicked="RegButton_Clicked" FontAttributes="Bold" Text="Зарегестрироваться!" WidthRequest="300" HorizontalOptions="Center"></Button>
+        <Entry x:Name="NameField" TextColor="#000" Placeholder="Введите Имя"></Entry>
+        <Entry x:Name="LoginField" TextColor="#000" Placeholder="Введите Логин"></Entry>
+        <Entry x:Name="PhoneField" TextColor="#000" Placeholder="Введите Номер телефона"></Entry>
+        <Entry x:Name="MailField" TextColor="#000" Placeholder="Введите Почту"></Entry>
+        <Entry x:Name="PassField" TextColor="#000" Placeholder="Введите Пароль"></Entry>
+        <Button x:Name="RegistrButton" Clicked="RegistrButton_Clicked" FontAttributes="Bold" Text="Начать практиковаться!" WidthRequest="300" HorizontalOptions="Center"></Button>
+
+        <!--<Button x:Name="RegButton" Clicked="RegButton_Clicked" FontAttributes="Bold" Text="Зарегестрироваться!" WidthRequest="300" HorizontalOptions="Center"></Button>-->
     </StackLayout>
+
 </ContentPage>

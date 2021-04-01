@@ -6,10 +6,13 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsTalk.Android", "LetsTalk\LetsTalk.Android\LetsTalk.Android.csproj", "{07066AC4-62D9-40D4-A6BD-3B9F974E0D2D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsTalk.iOS", "LetsTalk\LetsTalk.iOS\LetsTalk.iOS.csproj", "{171B7F68-F7CB-4BDE-9BA0-404AB867C185}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4680A564-D48C-4E8D-B236-52B2196ABD9E} = {4680A564-D48C-4E8D-B236-52B2196ABD9E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsTalk.UWP", "LetsTalk\LetsTalk.UWP\LetsTalk.UWP.csproj", "{4680A564-D48C-4E8D-B236-52B2196ABD9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsTalk", "LetsTalk\LetsTalk\LetsTalk.csproj", "{00F011B5-1DAD-4553-871C-B68B5541C982}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetsTalk", "LetsTalk\LetsTalk\LetsTalk.csproj", "{00F011B5-1DAD-4553-871C-B68B5541C982}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

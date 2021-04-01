@@ -2,13 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:LetsTalk"
-             x:Class="LetsTalk.MainPage">
-    
+             x:Class="LetsTalk.MainPage"
+             Title="Вход">
+    <ContentPage.Content>
     <StackLayout Padding="5,5,5,5">
         <Label Text="Let's Taklk" TextColor="#000" FontSize="48" HorizontalOptions="Center" Margin="30" ></Label>
-        <Entry TextColor="#000" Placeholder="Введите Имя"></Entry>
-        <!--<Button Clicked="SignUpButtonClik" FontAttributes="Bold" x:Name="SignUpButton" Text="Продолжить" WidthRequest="300" HorizontalOptions="Center"></Button>-->
+            <Entry x:Name="LoginField" TextColor="#000" Placeholder="Введите Имя"></Entry>
+            <Entry x:Name="PassField" TextColor="#000" Placeholder="Введите Имя"></Entry>
+            <!--<Button Clicked="SignUpButtonClik" FontAttributes="Bold" x:Name="SignUpButton" Text="Продолжить" WidthRequest="300" HorizontalOptions="Center"></Button>-->
         <Button x:Name="InButton" Clicked="InButton_Clicked" FontAttributes="Bold" Text="Продолжить" WidthRequest="300" HorizontalOptions="Center"></Button>
         <Button x:Name="RegButton" Clicked="RegButton_Clicked" FontAttributes="Bold" Text="Зарегестрироваться!" WidthRequest="300" HorizontalOptions="Center"></Button>
-        </StackLayout>
+       </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

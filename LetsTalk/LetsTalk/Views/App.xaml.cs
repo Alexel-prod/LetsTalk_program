@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,8 +11,8 @@ namespace LetsTalk
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+           /* FolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));*/
+            MainPage = new NavigationPage (new LetsTalk.MainPage());
         }
 
         protected override void OnStart()
