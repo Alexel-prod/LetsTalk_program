@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LetsTalk.Views.VocabularyPage"
+             Title="Мой словарь">
+    <ContentPage.Content>
+        <ScrollView VerticalOptions="Start">
+        <StackLayout x:Name="stackLayout">
+
+
+            <!--<Label Text="Новое слово" Opacity="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Label Text="" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />-->
+
+            <Button x:Name="AddNewWordButton" VerticalOptions="Start" Clicked="AddNewWordButton_Clicked" Text="Добавить новое слово"></Button>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

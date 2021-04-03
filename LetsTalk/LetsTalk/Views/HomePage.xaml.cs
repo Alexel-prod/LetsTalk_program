@@ -17,19 +17,24 @@ namespace LetsTalk.Views
 			InitializeComponent ();
 		}
 
-		private void ToSettingsButton_Clicked(object sender, EventArgs e)
+		private async void ToSettingsButton_Clicked(object sender, EventArgs e)
 		{
-
+            await Navigation.PushAsync(new SettingsPage());
 		}
 
-		private void ToPetButton_Clicked(object sender, EventArgs e)
+		private async void ToPetButton_Clicked(object sender, EventArgs e)
 		{
-
-		}
+            await Navigation.PushAsync(new PetPage());
+        }
 
 		private async void ToTalkButton_Clicked(object sender, EventArgs e)
 		{
 			await Navigation.PushAsync(new TalkSessionPage());
 		}
-	}
+
+        private async void ToVocabularyButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new VocabularyPage());
+        }
+    }
 }

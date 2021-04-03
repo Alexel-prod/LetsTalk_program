@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LetsTalk.Views.PetPage"
+             Title="Мой питомец">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Pet Name" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Label Text="Кол-во баллов: 0"></Label>
+            <!--<Button x:Name="Button" Clicked="" Padding="10,10,10,10" BorderColor="#4B3BC4" TextColor="#fff" FontAttributes="Bold" Text="Продолжить" WidthRequest="300" HorizontalOptions="Center" FontSize="19"></Button>-->
+            <!--<Button x:Name="Button1" Clicked="" BorderColor="#4B3BC4" TextColor="#fff" FontAttributes="Bold" Text="Зарегестрироваться!" WidthRequest="300" HorizontalOptions="Center" FontSize="10"></Button>-->
+        
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

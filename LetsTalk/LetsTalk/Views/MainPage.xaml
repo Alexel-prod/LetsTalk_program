@@ -3,15 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:LetsTalk"
              x:Class="LetsTalk.MainPage"
-             Title="Вход">
+             Title="Вход" BackgroundColor="#0E0078" >
     <ContentPage.Content>
-    <StackLayout Padding="5,5,5,5">
-        <Label Text="Let's Taklk" TextColor="#000" FontSize="48" HorizontalOptions="Center" Margin="30" ></Label>
-            <Entry x:Name="LoginField" TextColor="#000" Placeholder="Введите Логин"></Entry>
-            <Entry x:Name="PassField" TextColor="#000" Placeholder="Введите Пароль"></Entry>
+        <StackLayout BackgroundColor="#080045" Padding="5,5,5,5">
+        <Label Text="Let's Taklk" TextColor="#fff" FontSize="48" FontAttributes="Bold" HorizontalOptions="Center" Margin="30" ></Label>
+            <Entry x:Name="LoginField" TextColor="#fff" PlaceholderColor="#fff" BackgroundColor="#0E0078" Placeholder="Введите Логин"></Entry>
+            <Entry x:Name="PassField" IsPassword="True" TextColor="#fff" PlaceholderColor="#fff" BackgroundColor="#0E0078" Placeholder="Введите Пароль"></Entry>
             <!--<Button Clicked="SignUpButtonClik" FontAttributes="Bold" x:Name="SignUpButton" Text="Продолжить" WidthRequest="300" HorizontalOptions="Center"></Button>-->
-        <Button x:Name="InButton" Clicked="InButton_Clicked" FontAttributes="Bold" Text="Продолжить" WidthRequest="300" HorizontalOptions="Center"></Button>
-        <Button x:Name="RegButton" Clicked="RegButton_Clicked" FontAttributes="Bold" Text="Зарегестрироваться!" WidthRequest="300" HorizontalOptions="Center"></Button>
+            <Button x:Name="InButton" Clicked="InButton_Clicked" Padding="10,10,10,10" BorderColor="#4B3BC4" TextColor="#fff" FontAttributes="Bold" Text="Продолжить" WidthRequest="300" HorizontalOptions="Center" FontSize="19"></Button>
+            <Button x:Name="RegButton" Clicked="RegButton_Clicked" BorderColor="#4B3BC4" TextColor="#fff" FontAttributes="Bold" Text="Зарегестрироваться!" WidthRequest="300" HorizontalOptions="Center" FontSize="10"></Button>
        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

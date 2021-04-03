@@ -5,15 +5,14 @@
              Title="Home">
     <ContentPage.Content>
         <StackLayout Padding="5,5,5,5">
-            <Label Text="Let's Taklk" TextColor="#000" FontSize="48" HorizontalOptions="Center" Margin="30" ></Label>
+            <Label Text="Let's Taklk" TextColor="#fff" FontSize="36" HorizontalOptions="Start" Margin="27,27,27,60" ></Label>
             
            
             <!--<Button Clicked="SignUpButtonClik" FontAttributes="Bold" x:Name="SignUpButton" Text="Продолжить" WidthRequest="300" HorizontalOptions="Center"></Button>-->
-            <Button x:Name="ToTalkButton" Clicked="ToTalkButton_Clicked" BorderColor="#48DB4B" TextColor="#48DB4B" FontAttributes="Bold" Text="Найти собеседника" WidthRequest="300" HorizontalOptions="Center"></Button>
-            <Button x:Name="ToPetButton" BorderColor="#3DBDD9" TextColor="#3DBDD9" Clicked="ToPetButton_Clicked" FontAttributes="Bold" Text="Питомец" WidthRequest="300" HorizontalOptions="Center"></Button>
-            <Button x:Name="ToSettingsButton" BorderColor="#3DBDD9" TextColor="#3DBDD9" Clicked="ToSettingsButton_Clicked" FontAttributes="Bold" Text="Настройки" WidthRequest="300" HorizontalOptions="Center"></Button>
-            
-            
+            <Button x:Name="ToTalkButton" Padding="-70,10,10,10" Clicked="ToTalkButton_Clicked" BorderColor="#48DB4B" TextColor="#48DB4B" FontAttributes="Bold" Text="Найти собеседника" WidthRequest="300" HorizontalOptions="Start" ></Button>
+            <Button x:Name="ToPetButton" Padding="-147,10,10,10" BorderColor="#3DBDD9" TextColor="#3DBDD9" Clicked="ToPetButton_Clicked" FontAttributes="Bold" Text="Питомец" WidthRequest="300" HorizontalOptions="Start" ></Button>
+            <Button x:Name="ToVocabularyButton" Padding="-115,10,10,10" BorderColor="#3DBDD9" TextColor="#3DBDD9" Clicked="ToVocabularyButton_Clicked" FontAttributes="Bold" Text="Мой словарь" WidthRequest="300" HorizontalOptions="Start" ></Button>
+            <Button x:Name="ToSettingsButton" Padding="-130,10,10,10" BorderColor="#3DBDD9" TextColor="#3DBDD9" Clicked="ToSettingsButton_Clicked" FontAttributes="Bold" Text="Настройки" WidthRequest="300" HorizontalOptions="Start" ></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

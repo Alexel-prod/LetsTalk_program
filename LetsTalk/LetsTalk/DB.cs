@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using LetsTalk.Views;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,11 +10,20 @@ namespace LetsTalk
     {
         MySqlConnection connection = new MySqlConnection("server=localhost; port=3306; username=root; password=root; database=letsTalk");
 
-        public void OpenConnection()
+        public async void OpenConnection()
         {
             if (connection.State == System.Data.ConnectionState.Closed)
             {
-                connection.Open();
+                try
+                {
+                    connection.Open();
+                }
+                catch
+                {
+
+                }
+                    
+                
             }
                 
         }
